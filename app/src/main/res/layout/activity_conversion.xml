@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EE745A"
+    tools:context=".Conversion">
+
+    <TextView
+        android:id="@+id/lbl_Unidad"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Valor:"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/txt_Numero"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:hint="Ingrese un numero"
+        android:textColor="#fafafa"
+        android:inputType="number"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/btn_Calcular"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="Calcular"
+        android:background="#009688"
+        android:foregroundTint="#fafafa"
+        android:text="CONVERTIR"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/lbl_Resultado"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="Resultado:"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/lbl_Total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btn_Atras"
+        android:layout_width="55dp"
+        android:layout_height="63dp"
+        android:onClick="Atras"
+        android:text="<--"
+        android:background="#009688"
+        android:foregroundTint="#fafafa"
+        android:textSize="20dp" />
+
+</LinearLayout>

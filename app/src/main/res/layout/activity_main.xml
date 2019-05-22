@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EE745A"
+    tools:context=".Main">
+
+    <TextView
+        android:id="@+id/lbl_Temperatura2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Areas"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/lyh_Temperatura1"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_hm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:foregroundTint="#fafafa"
+            android:onClick="Hect_Mts"
+            android:text="Hectareas2 a Metros2"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_mh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:foregroundTint="#fafafa"
+            android:onClick="Mts_Hect"
+            android:text="Metros2 a Hectareas2"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyh_Temperatura2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_mk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:foregroundTint="#fafafa"
+            android:onClick="Mts2_Km"
+            android:text="Metros2 a Kilometros2"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:foregroundTint="#fafafa"
+            android:onClick="KM_Mts2"
+            android:text="Kilometros2 a Metros2"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl_Distancia"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Distancias"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/lyh_Distancia1"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_M_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="'Metros' a 'Centimetros'"
+            android:background="#009688"
+            android:foregroundTint="#000"
+            android:textAllCaps="false"
+            android:onClick="Mts_Cnts"/>
+
+        <Button
+            android:id="@+id/btn_C_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="'Centimetros' a 'Metros'"
+            android:background="#009688"
+            android:foregroundTint="#000"
+            android:textAllCaps="false"
+            android:onClick="Cnts_Mts"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyh_Distancia2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_C_INCH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:foregroundTint="#000"
+            android:onClick="Cnts_Pulg"
+            android:text="'Centimetros' a 'Pulgadas'"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_INCH_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:foregroundTint="#000"
+            android:text="'Pulgadas' a 'Centimetros'"
+            android:textAllCaps="false"
+            android:onClick="Pulg_Cent"/>
+    </LinearLayout>
+</LinearLayout>
